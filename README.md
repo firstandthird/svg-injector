@@ -1,5 +1,5 @@
 # svg-injector
-Loads and caches a SVG file and injects it into the DOM.
+Loads and caches an SVG file and injects it into the DOM.
 
 ## Installation
 

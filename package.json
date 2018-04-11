@@ -1,7 +1,7 @@
 {
   "name": "@firstandthird/svg-injector",
   "version": "1.0.0",
-  "description": "Loads and caches a SVG file and injects it into the DOM",
+  "description": "Loads and caches an SVG file and injects it into the DOM",
   "main": "dist/svg-injector.js",
   "module": "index.js",
   "scripts": {
