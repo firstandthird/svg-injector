@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>svg-injector Example</title>
+</head>
+<body>
+  <h1>svg-injector Example</h1>
+
+  <script src="../dist/svg-injector.js"></script>
+  <script>
+    window.svgLocation = './example.svg';
+
+    SvgInjector.loadSVG('./example.svg', (svg) => {
+      console.log('SVG LOADED:', svg);
+    });
+
+    SvgInjector.injectSVG('./example.svg');
+  </script>
+</body>
+</html>
