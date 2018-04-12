@@ -45,7 +45,7 @@ loadSVG('image.svg', (svg) => {
 
 ### injectSVG(url)
 
-Injects an SVG into the DOM. Calls [loadSVG](#injectsvgurl).
+Injects an SVG into the DOM. Calls [loadSVG](#loadsvgurl-callback).
 
 #### Parameters:
 
