@@ -22,8 +22,8 @@ Custom events are fired on injection.
 
 ## API
 
-- [loadSVG](#loadsvg-callback)
-- [injectSVG](#injectSVG-url)
+- [loadSVG](#loadsvgurl-callback)
+- [injectSVG](#injectsvgurl)
 
 ### loadSVG(url, [callback])
 
@@ -45,7 +45,7 @@ loadSVG('image.svg', (svg) => {
 
 ### injectSVG(url)
 
-Injects an SVG into the DOM. Calls [loadSVG](#loadsvg-context).
+Injects an SVG into the DOM. Calls [loadSVG](#injectsvgurl).
 
 #### Parameters:
 
