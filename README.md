@@ -11,7 +11,7 @@ In your project import the library:
 
 `import { loadSVG, injectSVG } from '@firstandthird/svg-injector'`
 
-The injectSVG method will be automatically called  once the `DOMContentLoaded` event is fired using `window.svgLocation` as parameter.
+The `injectSVG` method will be automatically called once the `DOMContentLoaded` event is fired using `window.svgLocation` as parameter.
 
 ## Events
 Custom events are fired on injection.
