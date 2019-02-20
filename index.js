@@ -29,4 +29,5 @@ export function injectSVG(url) {
 
 ready(() => {
   injectSVG(window.svgLocation);
+  window.svgLocation = null;
 });
