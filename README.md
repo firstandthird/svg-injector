@@ -1,19 +1,25 @@
 # svg-injector
+
 Loads and caches an SVG file and injects it into the DOM.
 
 ## Installation
 
-`npm install --save @firstandthird/svg-injector`
+```sh
+npm install @firstandthird/svg-injector
+```
 
 ## Usage
 
 In your project import the library:
 
-`import { loadSVG, injectSVG } from '@firstandthird/svg-injector'`
+```javascript
+import { loadSVG, injectSVG } from '@firstandthird/svg-injector'
+```
 
 The `injectSVG` method will be automatically called once the `DOMContentLoaded` event is fired using `window.svgLocation` as parameter.
 
 ## Events
+
 Custom events are fired on injection.
 
 | Event             | Where   | When                         |
@@ -29,13 +35,13 @@ Custom events are fired on injection.
 
 Loads an SVG file.
 
-#### Parameters:
+#### Parameters
 
 `url` - {string} - A valid URL to the SVG file.
 
 `[callback]` {function} - Callback function called once the SVG is loaded.
 
-#### Example:
+#### Example
 
 ```javascript
 loadSVG('image.svg', (svg) => {
@@ -47,11 +53,11 @@ loadSVG('image.svg', (svg) => {
 
 Injects an SVG into the DOM. Calls [loadSVG](#loadsvgurl-callback).
 
-#### Parameters:
+#### Parameters
 
 `url` - {string} - A valid URL to the SVG file. Fires a [`svgicons:loaded`](#events) event when completed.
 
-#### Example:
+#### Example
 
 ```javascript
 injectSVG('image.svg');
