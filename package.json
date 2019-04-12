@@ -7,6 +7,8 @@
   "scripts": {
     "start": "scriptkit",
     "dev": "scriptkit dev",
+    "build": "scriptkit build",
+    "pretest": "scriptkit build",
     "test": "cat test/svg-injector.test.dist.js | tape-run --static . --browser phantomjs --render tap-spec",
     "prepublishOnly": "scriptkit"
   },
@@ -27,10 +29,10 @@
   "homepage": "https://github.com/firstandthird/svg-injector#readme",
   "devDependencies": {
     "eslint-config-firstandthird": "^4.3.0",
-    "eslint-plugin-compat": "^2.7.0",
+    "eslint-plugin-compat": "^3.1.1",
     "eslint-plugin-import": "^2.16.0",
     "phantomjs-prebuilt": "^2.1.16",
-    "scriptkit": "^2.0.1",
+    "scriptkit": "^2.0.3",
     "tap-spec": "^5.0.0",
     "tape-rollup": "^4.6.4",
     "tape-run": "^5.0.0"
@@ -48,6 +50,9 @@
     }
   },
   "scriptkit": {
+    "serve": {
+      "enabled": true
+    },
     "files": {
       "dist/svg-injector.js": "index.js",
       "test/svg-injector.test.dist.js": "test/svg-injector.test.js"
@@ -61,6 +66,6 @@
     }
   },
   "dependencies": {
-    "domassist": "^2.0.1"
+    "domassist": "^2.0.2"
   }
 }
