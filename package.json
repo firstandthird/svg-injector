@@ -3,13 +3,13 @@
   "version": "2.0.1",
   "description": "Loads and caches an SVG file and injects it into the DOM",
   "main": "index.js",
-  "module": "dist/svg-injector.esm.js",
+  "module": "dist/svg-injector.js",
   "scripts": {
     "start": "scriptkit",
     "dev": "scriptkit dev",
     "build": "scriptkit build",
     "pretest": "scriptkit build",
-    "test": "cat test/svg-injector.test.dist.js | tape-run --static . --browser phantomjs --render tap-spec",
+    "test": "cat test/svg-injector.test.dist.bundle.js | tape-run --static . --browser phantomjs --render tap-spec",
     "prepublishOnly": "scriptkit"
   },
   "repository": {
@@ -28,14 +28,14 @@
   },
   "homepage": "https://github.com/firstandthird/svg-injector#readme",
   "devDependencies": {
-    "eslint-config-firstandthird": "^4.3.0",
-    "eslint-plugin-compat": "^3.1.1",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-config-firstandthird": "^4.4.0",
+    "eslint-plugin-compat": "^3.2.0",
+    "eslint-plugin-import": "^2.18.0",
     "phantomjs-prebuilt": "^2.1.16",
-    "scriptkit": "^2.0.3",
+    "scriptkit": "^3.0.0",
     "tap-spec": "^5.0.0",
     "tape-rollup": "^4.6.4",
-    "tape-run": "^5.0.0"
+    "tape-run": "^6.0.0"
   },
   "eslintConfig": {
     "env": {
@@ -66,6 +66,6 @@
     }
   },
   "dependencies": {
-    "domassist": "^2.0.2"
+    "domassist": "^2.2.0"
   }
 }
