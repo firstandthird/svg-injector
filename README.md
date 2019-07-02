@@ -1,4 +1,4 @@
-# SVG Injector ![npm](https://img.shields.io/npm/v/@firstandthird/svg-injector.svg)
+# SVG Injector ![npm](https://img.shields.io/npm/v/@firstandthird/svg-injector.svg) [![Build Status](https://travis-ci.org/firstandthird/svg-injector.svg?branch=master)](https://travis-ci.org/firstandthird/svg-injector)
 
 Loads and caches an SVG file and injects it into the DOM.
 
