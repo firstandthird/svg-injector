@@ -21,6 +21,7 @@ export function loadSVG(url, callback = () => { }) {
 export function injectSVG(url) {
   loadSVG(url, svg => {
     const div = document.createElement('div');
+    div.classList.add('svg-injector');
     div.innerHTML = svg;
     document.body.insertBefore(div, document.body.childNodes[0]);
     fire(document.body, 'svgicons:loaded');
